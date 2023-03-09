@@ -1,0 +1,74 @@
+﻿@model MensajeriaApp.entityFrameworkModels.bodega
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>bodega</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.nombre)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.nombre)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.codigo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.codigo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.direccion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.direccion)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.latitud)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.latitud)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.longitud)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.longitud)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.municipio.nombre)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.municipio.nombre)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

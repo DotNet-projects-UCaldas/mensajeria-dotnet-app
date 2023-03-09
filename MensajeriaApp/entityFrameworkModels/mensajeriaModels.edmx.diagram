@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a88113d3fa064755b37d5c817ae249a1" Name="Diagram1">
+        <EntityTypeShape EntityType="mensajeriaDBModel.bodega" Width="1.5" PointX="3.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="mensajeriaDBModel.departamento" Width="1.5" PointX="1.5" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mensajeriaDBModel.direccion" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="mensajeriaDBModel.envio" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="mensajeriaDBModel.estadoEnvio" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="mensajeriaDBModel.historial" Width="1.5" PointX="6" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mensajeriaDBModel.municipio" Width="1.5" PointX="1.5" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="mensajeriaDBModel.oficina" Width="1.5" PointX="1.5" PointY="33.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mensajeriaDBModel.paquete" Width="1.5" PointX="0.75" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="mensajeriaDBModel.persona" Width="1.5" PointX="1.5" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mensajeriaDBModel.tipoDocumento" Width="1.5" PointX="1.5" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mensajeriaDBModel.tipoTransporte" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="mensajeriaDBModel.vehiculo" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="mensajeriaDBModel.FK__historial__idBod__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.idMunicipio_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.FK__municipio__idDep__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.FK__direccion__idMun__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.FK__envio__idDirecci__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.FK__persona__idDirec__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.idPersonaDireccion_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.FK__envio__idEstado__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.FK__envio__idPaquete__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.FK__envio__idRemiten__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.FK__envio__idTipoTra__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.FK__historial__idPaq__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.FK__oficina__idMunic__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.FK__paquete__idOfici__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.fk_tipo_doc_persona_id" ManuallyRouted="false" />
+        <AssociationConnector Association="mensajeriaDBModel.FK__vehiculo__idTipo__45F365D3" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
